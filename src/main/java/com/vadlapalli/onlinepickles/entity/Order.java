@@ -12,7 +12,6 @@ import lombok.Data;
 @Data
 @Entity
 public class Order extends AbstractEntity {
-
 	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<Product> products = new HashSet<>();
 }
