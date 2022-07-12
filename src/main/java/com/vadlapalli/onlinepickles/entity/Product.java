@@ -2,9 +2,6 @@ package com.vadlapalli.onlinepickles.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.DynamicInsert;
@@ -34,8 +31,6 @@ public class Product extends AbstractEntity {
 
 	@Column(name = "price", nullable = false)
 	private Double price;
+	
 
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name="order_id", nullable=false)
-	private Order order;
 }

@@ -2,6 +2,7 @@ package com.vadlapalli.onlinepickles.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -15,5 +16,11 @@ public interface ProductService {
 	void saveProduct(Product product);
 
 	List<Product> getAllProducts();
+
+	void updateProduct(long id, Product product);
+
+	void deleteProduct(long id);
+
+	Optional<Product> getProduct(long id);
 
 }
