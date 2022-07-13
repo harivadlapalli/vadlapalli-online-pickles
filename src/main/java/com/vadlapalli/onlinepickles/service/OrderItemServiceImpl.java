@@ -14,9 +14,6 @@ public class OrderItemServiceImpl implements OrderItemService {
 	
 	@Autowired
 	private OrderItemRepo orderItemRepo;
-	
-	
-	List<OrderItem> orderItems = new ArrayList<>();
 
 	@Override
 	public void saveOrderItem(OrderItem orderItem) {

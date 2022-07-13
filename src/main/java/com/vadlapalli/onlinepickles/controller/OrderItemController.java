@@ -24,7 +24,7 @@ public class OrderItemController {
 		oderItemService.saveOrderItem(orderItem);
 		
 	}
-	@GetMapping("/")
+	@GetMapping("/allitems")
 	public List<OrderItem> getAllOrderItems(){
 		return oderItemService.getAllOrderItems();
 		
